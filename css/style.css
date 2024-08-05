@@ -3,6 +3,7 @@
     --greytext: #C7C7C7;
     --lighttext: #D8D8D8;
     --headercol: #012D63;
+    --herobtncol: #8E32C6;
     --footercol: #021635;
 }
 
@@ -30,4 +31,102 @@ body {
 
 .container {
     width: 1110px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+
+.header {
+    background-color: var(--headercol);
+    padding-top: 16px;
+    padding-bottom: 14px;
+}
+.header>.container {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 29px;
+}
+
+.nav-link {
+    color: var(--greytext);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.16;
+}
+
+.nav-link:hover {
+    color: var(--whitetext);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.16;
+}
+
+.active {
+    color: var(--whitetext);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.16;
+}
+
+.hero {
+    padding-top: 94px;
+    padding-bottom: 183px;
+    background: url(../img/herobg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-imgtext {
+    color: var(--whitetext);
+    font-family: "PT Serif";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.33;
+}
+
+.title {
+    color: var(--whitetext);
+    font-family: "Playfair Display";
+    font-size: 144px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.subtitle {
+    color: var(--whitetext);
+    font-family: "Playfair Display";
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.hero-text {
+    color: var(--whitetext);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.16;
+    width: 508px;
+    margin-bottom: 41px;
+}
+
+.hero-btn {
+    color: var(--whitetext);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.16;
+    padding: 20px 61px;
+    border-radius: 10px;
+    background: var(--herobtncol);
 }
