@@ -47,6 +47,10 @@ body {
     gap: 29px;
 }
 
+.header-nav {
+    margin-left: auto;
+}
+
 .nav-list {
     display: flex;
     gap: 29px;
@@ -87,12 +91,18 @@ body {
     flex-direction: column;
 }
 
+.hero-img {
+    width: 160px;
+    height: 120px;
+}
+
 .hero-imgtext {
     color: var(--whitetext);
     font-family: "PT Serif";
     font-size: 48px;
     font-weight: 400;
-    line-height: 1.33;
+    line-height: 1;
+    margin-left: 25px;
 }
 
 .title {
@@ -142,4 +152,103 @@ body {
 
 .opps-list {
     display: flex;
+    border: solid 5px var(--herobtncol);
+    padding: 25px 50px;
+}
+
+.opps-item {
+    padding-right: 50px;
+    border-right: var(--whitetext) solid 1px;
+}
+
+.opps-item:nth-child(2) {
+    padding-right: 95px;
+    padding-left: 95px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.opps-item:nth-child(3) {
+    border: none;
+    padding-left: 50px;
+}
+
+.opps-subtitle {
+    color: var(--whitetext);
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.33;
+    width: 159px;
+    margin-left: 41px;
+}
+
+.rev {
+    padding-top: 25px;
+    padding-bottom: 114px;
+    background: url(../img/reviewsbg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rev-title {
+    color: var(--whitetext);
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.33;
+}
+
+.rev-list {
+    display: flex;
+    gap: 93px;
+    justify-content: center;
+}
+
+.rev-item {
+    background: url(../img/revjohnbg.png);
+    border-radius: 15px;
+    /* box-shadow: 0px 14px 0px -5px #7B54B2, 0px 30px 0px -13px #533978; */
+    background-repeat: no-repeat;
+    padding: 49px 13.5px 29px 13.5px;
+}
+
+.rev-item:nth-child(2) {
+    background: url(../img/revelizbg.png);
+    background-repeat: no-repeat;
+    padding: 49px 13.5px;
+}
+
+.rev-item:nth-child(3) {
+    background: url(../img/revtombg.png);
+    background-repeat: no-repeat;
+    padding: 49px 13.5px;
+}
+
+.rev-comment {
+    width: 228px;
+    color: var(--whitetext);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.16;
+    margin-bottom: 8px;
+}
+
+.rev-text {
+    /* margin-bottom: 47px; */
+    color: var(--whitetext);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.14;
+}
+
+
+.rev-span {
+    color: var(--lighttext);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.14;
 }
