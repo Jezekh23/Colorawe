@@ -130,3 +130,16 @@ body {
     border-radius: 10px;
     background: var(--herobtncol);
 }
+
+.opps {
+    background: url(../img/oppsbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.opps-list {
+    display: flex;
+}
