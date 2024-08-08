@@ -272,28 +272,40 @@ body {
     padding-bottom: 37px;
 }
 
-.order>.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .order-title {
     color: var(--whitetext);
     font-family: "Playfair Display";
     font-size: 48px;
     font-weight: 400;
     line-height: 1.33;
+    text-align: center;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.order-item {
+    margin-bottom: 19px;
 }
 
 .order-input {
     color: var(--ordertext);
-    font-family: Roboto;
-    font-size: 28px;
-    font-style: normal;
+    font-size: 24px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.16;
+    border-radius: 50px;
+    background-color: var(--whitetext);
+    padding: 11px 417px 11px 24px;
+}
+.order-input:first-child {
+    padding: 12px 460px 12px 25px;
+    color: var(--ordertext);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.17;
 }
 
 .order-btnsb {
@@ -304,6 +316,7 @@ body {
     padding: 20px 48.5px;
     background-color: var(--herobtncol);
     border-radius: 16px;
+    flex-wrap: nowrap;
 }
 
 .footer {
